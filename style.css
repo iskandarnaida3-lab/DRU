@@ -166,7 +166,7 @@ body{
     }
 
     .div-content {
-        height: 60vh;
+        flex: 1;
     }
 
     .text-content {
@@ -175,4 +175,8 @@ body{
         top: 30%;
         font-size: 1.8rem;
     }
+
+	.div-footer {
+		height: 1vh;
+	}
 }
