@@ -13,7 +13,6 @@ body{
 
 .navbar-wrapper {
     position: relative;
-	width : 100%;
 }
 
 .cover-navbar {
@@ -198,5 +197,39 @@ body{
     to {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .div-navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        row-gap: 10px;
+    }
+
+    .ul-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .li-navbar {
+        padding: 8px;
+        margin: 2px;
+    }
+
+    .div-content {
+        height: 60vh;
+    }
+
+    .text-content {
+        left: 5%;
+        right: 5%;
+        top: 30%;
+        font-size: 1.8rem;
     }
 }
