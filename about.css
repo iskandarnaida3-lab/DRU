@@ -13,6 +13,7 @@ body{
 
 .navbar-wrapper {
     position: relative;
+	width : 100%;
 }
 
 .cover-navbar {
