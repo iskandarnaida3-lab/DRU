@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.div-navbar {
+    position: relative;
+    z-index: 100;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 10vh;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.img-navbar {
+    width: 50px;
+    border-radius: 50%;
+    animation: slideInLeft 1.2s ease;
+}
+
+.ul-navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    animation: slideInDown 1.2s ease;
+}
+
+.li-navbar {
+    padding: 15px;
+    margin: 5px; 
+}
+
+.li-navbar:hover {
+	 background-color: gainsboro;
+     border-radius: 50px;
+     transition: 0.5s ease-in-out;
+}
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
+.p-navbar {
+    animation: slideInRight 1.2s ease;
+}
+
+.div-content {
+    /* position relative digunakan untuk menandakan induk, agar absolut dr text-content dapat digunakan */
+    position: relative;
+    height: calc(100vh - 10vh - 2vh - 20px);
+}
+
+.img-content {
+    /* 100% itu merujuk ke induk(div), berarti mengisi 100% div-content */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.text-content{
+    /* absolut digunakan untuk membatalkan format default susunan tampilan, agar text dapat diletakkan bebas di div-content */
+    position: absolute;
+    top: 40%;
+    left: 10%;
+
+    color: white;
+    text-align: left;
+    font-size: xx-large;
+    animation: slideInLeft 1.2s ease;
+}
+
+.div-footer {
+    height: 2vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+.p-footer {
+    animation: slideInLeft 1.2s ease;
+}
+
+.a-footer {
+    margin: 5px;
+    color: black;
+}
+
+.a-footer:hover {
+    color: blue;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
