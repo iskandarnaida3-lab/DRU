@@ -28,8 +28,8 @@ body{
     left: 0;
     z-index: 100;
     width: 100%;
-    padding-left: 50vh;
-    padding-right: 50vh;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 50vh;
     display: flex;
     align-items: flex-start;
