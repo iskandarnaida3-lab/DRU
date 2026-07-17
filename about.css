@@ -199,3 +199,37 @@ body{
         transform: translateX(0px);
     }
 }
+
+@media (max-width: 768px) {
+    .cover-navbar,
+    .div-navbar {
+        height: 32vh;
+    }
+
+    .div-navbar {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 15px 20px;
+        row-gap: 10px;
+    }
+
+    .ul-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-navbar-mini {
+        flex-wrap: wrap;
+    }
+
+    .div-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-content1,
+    .card-content2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
