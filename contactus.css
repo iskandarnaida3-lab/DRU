@@ -215,4 +215,8 @@ body{
         margin-left: 15px;
         margin-right: 15px;
     }
+
+	.div-footer {
+		font-size: 10px;
+	}
 }
