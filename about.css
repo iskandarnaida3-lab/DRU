@@ -126,6 +126,12 @@ body{
     align-items: center;
 }
 
+.layanan-content {
+	display: flex; 
+	fles-direction: column; 
+	justify-content: center;
+}
+
 .p-jasa-content {
     display: flex;
     flex-direction: column;
