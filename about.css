@@ -86,6 +86,7 @@ body{
     align-items: center;
     padding: 10px;
     box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+    z-index: 200;
 }
 
 .ul-navbar-mini {
@@ -96,7 +97,7 @@ body{
 
 .li-navbar-mini {
     padding: 10px;
-    border: 100px solid transparent;
+    border: 1px;
 }
 
 .li-navbar-mini:hover {
