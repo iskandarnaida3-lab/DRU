@@ -129,7 +129,8 @@ body{
 .layanan-content {
 	display: flex; 
 	flex-direction: column; 
-	justify-content: center;
+	align-items: center;
+    justify-content: center;
 }
 
 .p-jasa-content {
