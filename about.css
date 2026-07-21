@@ -118,17 +118,17 @@ body{
 
 .card-content1 {
     display: flex;
-    align-items: center;
+   justify-content: center;
 }
 
 .card-content2 {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .layanan-content {
 	display: flex; 
-	fles-direction: column; 
+	flex-direction: column; 
 	justify-content: center;
 }
 
