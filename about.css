@@ -99,6 +99,12 @@ body{
     border-radius: 8px;
 }
 
+.li-navbar-mini:hover {
+	 background-color: gainsboro;
+     border-radius: 50px;
+     transition: 0.5s ease-in-out;
+}
+
 .a-navbar-mini {
     text-decoration: none;
     color: black; 
