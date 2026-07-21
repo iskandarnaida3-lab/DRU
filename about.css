@@ -96,8 +96,7 @@ body{
 
 .li-navbar-mini {
     padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 8px;
+    border: 100px solid transparent;
 }
 
 .li-navbar-mini:hover {
