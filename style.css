@@ -39,6 +39,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
+    width: 100%;
     animation: slideInDown 1.2s ease;
     background-color: white;
     border-radius: 50px;
