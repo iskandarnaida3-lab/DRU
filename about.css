@@ -243,9 +243,10 @@ body{
 	.div-footer {
 		font-size: 10px;
 		display: flex;
-		justify-content: space-between;
-		padding-left: 25px; 
-		padding-right: 25px;
+        flex-direction: column;
+		justify-content: center;
+        align-items: flex-start;
+		padding: 25px;
 		flex-wrap: wrap;
 	}
 }
