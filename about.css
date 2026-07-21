@@ -91,6 +91,7 @@ body{
 .ul-navbar-mini {
     display: flex;
     list-style-type: none;
+    animation: slideInDown 1.2s ease;
 }
 
 .li-navbar-mini {
@@ -101,7 +102,6 @@ body{
 
 .li-navbar-mini:hover {
 	 background-color: gainsboro;
-     border-radius: 50px;
      transition: 0.5s ease-in-out;
 }
 
