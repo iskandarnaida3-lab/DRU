@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- NAVBAR -->
     <div class="navbar-wrapper">
@@ -44,7 +45,7 @@
      <div class="div-navbar-mini">
         <ul class="ul-navbar-mini">
                 <li class="li-navbar-mini">
-                    <a href="#tentang-kami" class="a-navbar-mini">Tentang Kami</a>
+                    <a href="#tentang-kami" class="a-navbar-mini">About Us</a>
                 </li>
                 <li class="li-navbar-mini">
                     <a href="#visi-misi" class="a-navbar-mini">Visi/Misi</a>
@@ -196,5 +197,20 @@
         </p>
     </div>
     <!-- FOOTER END -->
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.pengenalan-content, .visimisi-content, .layanan-content').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+
 </body>
 </html>
