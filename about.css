@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -87,7 +91,6 @@ body{
     padding: 10px;
     box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
     z-index: 200;
-	border: 1px solid #ccc;
 }
 
 .ul-navbar-mini {
@@ -98,7 +101,9 @@ body{
 
 .li-navbar-mini {
     padding: 10px;
-    border: 1px;
+    border: 1px solid #ccc;
+	 margin: 10px;
+	 border-radius: 50px;
 }
 
 .li-navbar-mini:hover {
@@ -119,8 +124,40 @@ body{
     margin-bottom: 50px;
     margin-left: 200px;
     margin-right: 200px;
-    animation: slideInLeft 1.2s ease;
     text-align: justify;
+}
+
+.pengenalan-content {
+	 opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.pengenalan-content.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.layanan-content {
+	 opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.layanan-content.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.visimisi-content {
+	 opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visimisi-content.show {
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .card-content1 {
